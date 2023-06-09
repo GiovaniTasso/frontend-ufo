@@ -1,0 +1,144 @@
+.buscador-pin{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+}
+
+.titulo-mapa{
+	margin-bottom: 20px;
+	font-family: 'Saira Condensed', sans-serif;
+	font-size: 30px;
+}
+
+.container-mapa{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+}
+
+#map {
+	height: 400px;
+	width: 50%;
+	margin-bottom: 20px;	
+}
+
+#coordinates-panel {
+	display: none;
+}
+
+.formulario-buscar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 15px;
+	margin-bottom: 20px;
+}
+
+.botao-buscar {
+	margin-top: 15px;
+	border: none;
+	padding: 8px 8px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: #ff2e5f;
+	color: white;
+	border-radius: 5px;
+}
+
+.botao-buscar:hover {
+	cursor: pointer;
+}
+
+.botao-buscar:active {
+	background-color: #ffd452;
+}
+
+
+
+.resultado-lista {
+	display: flex;
+	align-items: center;
+	flex-direction: column;	
+}
+
+.modal-dialog{
+	display: none;	
+	padding: 25px;
+	background-color: #faeeca;
+	border-radius: 25px;
+	width: 350px;
+}
+
+.modal-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.modal-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.close {
+	border: none;
+	color: #ff2e5f;
+	font-size: 16px;
+	background-color: transparent;
+	font-weight: bold;
+}
+
+.form-group {
+	display: flex;
+	flex-direction: column;
+}
+
+.btn-primary {
+	margin-top: 15px;
+	border: none;
+	padding: 8px 8px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: #ff2e5f;
+	color: white;
+	border-radius: 5px;
+}
+
+[data-pin="mostrar"] {
+    display: block;	
+	position: fixed;
+
+	top: 200px;
+	right: 40%;
+}
+
+[data-pin="mostrar-fechar"] {
+    display: block;
+}
+
+[data-pin="esconder"] {
+    display: none;
+}
+
+@media screen and (max-width:480px) {
+	#map {
+		width: 90%;
+	}
+
+	.formulario-buscar {
+		font-size: 16px;
+		width: 90%;
+	}
+
+	.label-buscar {
+		width: 90%;
+	}
+	[data-pin="mostrar"] {
+		display: block;	
+		position: fixed;	
+		top: 100px;
+		right: 0%;		
+	}
+}

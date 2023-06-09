@@ -1,0 +1,46 @@
+.cadastro-principal {
+	display: flex;
+	justify-content: center;
+}
+
+.formulario-cadastro{
+	display: grid;	
+	align-items: center;
+	justify-content: space-evenly;
+	grid-template-columns: auto auto;
+	padding: 25px;
+	background-color: white;	
+	width: 800px;
+	align-content: center;
+}
+
+.conteudo-cadastro {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;	
+}
+
+.titulo-cadastro{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.imagem-cadastro {
+	width: 150px;
+}
+
+@media screen and (max-width:480px) {
+	.formulario-cadastro {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.imagem-cadastro {
+		margin-top: 20px;
+		width: 150px;
+	}
+}

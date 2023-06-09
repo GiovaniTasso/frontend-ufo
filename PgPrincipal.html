@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCadastro.css">
+    <link rel="stylesheet" href="css/styleLogon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.png" alt="Logo" class="logo">
+        <nav>
+            <ul class="links">
+                <li>
+                    <a class="nav-link" href="PgPrincipal.html">Home</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="cadastro.html">Cadastro</a>
+                </li>
+                <li>
+                    <button type="button" class="login">Login</button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <img src="img/ufo.png" alt="UFO" class="ufo">
+        <div class="card-principal">
+            <h1 class="titulo-principal">Quem são? Onde estão? Aqui você pode encontrar algumas respostas.</h1>
+            <h2 class="texto-principal">Desde os primórdios da humanidade, a ideia de vida extraterrestre tem fascinado a imaginação das pessoas. O tema dos alienígenas desperta uma mistura de curiosidade, especulação e até mesmo medo.</h2>
+            <h2 class="texto-principal">Desde relatos antigos de avistamentos de objetos voadores não identificados até relatos contemporâneos de encontros com seres de outros mundos, a ideia de que não estamos sozinhos no universo continua a intrigar e instigar nossa imaginação. Mas, afinal, onde estão os alienígenas?</h2>
+        </div>
+        <div class="card-secundario">
+            <div class="minicard busque">
+                <img src="img/busque.png" alt="UFO" class="imagem-minicard">
+                <h3>Busque aparições!</h3>
+            </div>
+            <div class="minicard registre">
+                <img src="img/registre.png" alt="UFO" class="imagem-minicard">
+                <h3>Registre o que viu.</h3>
+            </div>
+            <div class="minicard compartilhe">
+                <img src="img/campartilhe.png" alt="UFO" class="imagem-minicard">
+                <h3>Compatilhe!</h3>
+            </div>            
+        </div>
+        <div class="lateral">
+            <img src="img/alien.png" alt="Alien" class="alien">
+            <div class="card-lateral">            
+                <h2 class="texto-lateral">Navegue pelo nosso site para descobrir relatos emocionantes de avistamentos recentes, depoimentos de testemunhas oculares e análises detalhadas.</h2>
+                <h2 class="texto-lateral">Compartilhamos localizações, juntamente com descrições precisas de avistamentos!!</h2>
+            </div>
+        </div>
+
+    </main>
+
+    <div class="formulario-login">
+        <form class="conteudo-login">
+            <h1 class="titulo-login">Bem-vindo!</h1>
+            <fieldset class="conteudo-formulario">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" class="form-control">
+
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" class="form-control">
+            </fieldset>
+
+            <button type="button" id="btn-login" class="botao btn btn-primary">Login</button>
+            <button type="button" class="botao botao-fechar">Fechar</button>
+        </form>
+    </div>
+
+
+    
+    <script src="script/script.js"></script>
+    <script src="script/loginScript.js"></script>
+
+
+
+</body>
+
+</html>

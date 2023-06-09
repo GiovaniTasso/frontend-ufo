@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styleCadastro.css">
+    <link rel="stylesheet" href="css/styleLogon.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Saira+Condensed&display=swap" rel="stylesheet">
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAXHXMU_deWUlLxVO8faYsFFZb0dnRNKUE"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+</head>
+
+<body>
+    <header class="cabecalho">
+        <img src="img/logo.png" alt="Logo" width="30" height="30" class="logo">
+        <nav>
+            <ul class="links">
+                <li>
+                    <a class="nav-link" href="PgPrincipal.html">Home</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    </nav>
+
+    <div class="container-mapa">
+        <h1 class="titulo-mapa">Onde eles estão?</h1>
+
+        <div id="map"></div>
+
+        <div id="coordinates-panel"></div>
+
+        <div class="buscador-pin">
+            <h1>Buscar Pins</h1>
+
+            <form id="searchForm" class="formulario-buscar">
+                <div>
+                    <label for="searchId" class="label-buscar">Buscar por ID:</label>
+                    <input type="text" id="searchId" name="searchId">
+                </div>
+                <div>
+                    <button type="submit" class="botao-buscar">Buscar</button>
+                    <button id="showAllBtn" class="botao-buscar">Mostrar Todos</button>
+                </div>
+            </form>
+
+            <ul id="resultList" class="resultado-lista"></ul>
+        </div>
+
+    </div>
+
+
+    <div class="modal" id="addPinModal" tabindex="-1" role="dialog" aria-labelledby="addPinModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addPinModalLabel">Adicionar Pin</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <form id="addPinForm">
+                        <div class="form-group">
+                            <label for="latitude">Latitude:</label>
+                            <input type="text" id="latitude" name="latitude" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="longitude">Longitude:</label>
+                            <input type="text" id="longitude" name="longitude" class="form-control" readonly>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Descrição</label>
+                            <textarea id="description" name="description" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary salvar-pin">Salvar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="script/script.js"></script>
+    <script src="script/mapsScript.js"></script>
+    <script src="script/buscarPinScript.js"></script>
+
+
+
+</body>
+
+</html>

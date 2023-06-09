@@ -1,0 +1,319 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: Arial, sans-serif;
+	background-color: #ffffff;
+}
+
+.cabecalho {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding-top: 5px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.logo {
+	width: 100px;
+	height: 50px;	
+}
+
+ul {
+	display: flex;
+	align-items: center;
+}
+
+li {
+	padding: 10px;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+
+a {
+	text-decoration: none;
+}
+a:visited {
+	color:black;
+	text-decoration: none;
+}
+
+button {
+	list-style-type: none;
+}
+
+.login {
+	border: none;
+	padding: 5px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: #ff2e5f;
+	color: white;
+	border-radius: 5px;
+}
+
+.login:hover {
+	cursor: pointer;
+}
+
+.login:active {
+	background-color: #ffd452;
+}
+
+.conteudo-principal {
+	margin: 50px auto;
+	display: grid;
+	justify-content: space-around;
+	align-items: center;
+	grid-template-columns: auto auto auto;
+	grid-template-rows: 1fr 1fr;
+	width: 80%;	
+}
+
+.ufo {
+	width: 450px;
+	grid-row: span 2;	
+}
+
+
+.card-principal {
+	display: flex;
+	flex-direction: column;
+	grid-row: span 1;
+	grid-column: 2;
+	padding-top: 30px;
+	width: 600px;	
+}
+
+.titulo-principal {
+	font-size: 40px;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-family: 'Saira Condensed', sans-serif;
+}
+
+.texto-principal {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+.card-secundario {
+	display: grid;
+	grid-row: 2/span 1;
+	grid-column: 2;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 600px;
+	column-gap: 10px;	
+}
+
+.minicard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	border-radius: 10px;
+	padding: 25px;
+	font-weight: bold;
+}
+
+.imagem-minicard {
+	width: 50px;
+	margin-bottom: 10px;	
+}
+
+.busque {
+	color: #ff2e5f;
+	background-color: #ff2e5f3f;
+}
+
+.registre {
+	color: #42142a;
+	background-color: #42142a31;
+}
+
+.compartilhe {
+	color: #ffd452;
+	background-color: #ffd4521f;
+}
+
+.lateral {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	grid-row: 1/span 2;
+	grid-column: 3;
+}
+.alien {
+	width: 200px;
+	padding-bottom: 25px;	
+}
+
+.card-lateral {
+	display: flex;
+	flex-direction: column;
+	background-color: #140d1a;
+	color: #faeeca;
+	border-radius: 10px;
+	padding: 15px;
+	width: 120px;	
+}
+
+.texto-lateral {
+	font-size: 14px;
+	padding-bottom: 5px;
+}
+
+.formulario-login {
+	display: none;	
+	padding: 25px;
+	background-color: #faeeca;
+	border-radius: 25px;
+}
+
+.conteudo-login {
+	display: flex;
+	flex-direction: column;	
+}
+
+.titulo-login {	
+	font-size: 20px;
+	align-self: center;
+}
+
+.conteudo-formulario {
+	display: flex;
+	flex-direction: column;
+}
+
+label {
+	padding-top: 15px;
+}
+
+input {
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    border-color: #ff2e5f;
+    width: 320px;
+    background-color: transparent;      
+}
+
+input:focus {
+   outline: 0;
+}
+
+.botao {
+	margin-top: 15px;
+	border: none;
+	padding: 8px 8px;
+	font-size: 18px;
+	text-transform: uppercase;
+	background-color: #ff2e5f;
+	color: white;
+	border-radius: 5px;
+}
+
+.botao:hover {
+	cursor: pointer;
+}
+
+.botao:active {
+	background-color: #ffd452;
+}
+
+[data-lista="mostrar"] {
+    display: block;	
+	position: fixed;
+
+	top: 200px;
+	right: 40%;
+}
+
+[data-lista="mostrar-fechar"] {
+    display: block;
+}
+
+[data-lista="esconder"] {
+    display: none;
+}
+
+
+
+@media screen and (max-width:480px) {
+	.cabecalho {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo {
+		width: 50%;
+		height: auto;	
+	}
+
+	.conteudo-principal {
+		display: flex;
+		flex-direction: column;
+		align-items: center;		
+	}
+
+	.ufo {
+		width: 90%;
+	}
+
+	.card-principal {
+		display: flex;
+		flex-direction: column;		
+		padding-top: 15px;
+		width: 100%;	
+	}
+	
+	.titulo-principal {
+		font-size: 30px;		
+	}	
+	
+	.card-secundario {
+		display: grid;		
+		grid-template-columns: 1fr 1fr 1fr;		
+		justify-content: space-between;		
+		width: 100%;
+		column-gap: 2px;				
+	}
+	
+	.minicard {
+		background-color: transparent;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		border-radius: 10px;		
+		font-weight: bold;
+		width: 70%;
+		padding: 20px;
+		font-size: 14px;
+		box-sizing: border-box;	
+		text-align: center;
+	}
+	
+	.imagem-minicard {
+		width: 30px;
+		margin-bottom: 15px;	
+	}	
+	
+	.alien {
+		width: 70%;
+		margin-top: 15px;			
+	}
+	
+	.card-lateral {		
+		width: 80%;	
+	}
+
+	[data-lista="mostrar"] {
+		display: block;	
+		position: fixed;	
+		top: 100px;
+		right: 0%;		
+	}
+
+
+	
+}
